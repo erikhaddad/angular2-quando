@@ -9,7 +9,8 @@
     "moduleResolution": "node",
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es6",
+    "types": ["node", "jasmine", "firebase", "hammerjs"],
     "typeRoots": [
       "../node_modules/@types"
     ]

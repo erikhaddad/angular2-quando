@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+
+    background-color: rgb(255, 243, 224);
+    transition-duration: .5s;
+    transition-property: background-color;
+}

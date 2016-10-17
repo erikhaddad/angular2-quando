@@ -1,20 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+
+import { AuthModule } from './auth';
+import { FirebaseModule } from './firebase';
+import { EventsModule } from './events';
 
 import { AppComponent } from './app.component';
+import { QuandoRoutingModule } from "./app-routing.module";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    bootstrap: [
+        AppComponent
+    ],
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        AuthModule,
+        FirebaseModule,
+        EventsModule,
+        QuandoRoutingModule
+    ],
+    providers: [
+    ]
 })
-export class AppModule { }
+
+export class AppModule {
+
+}

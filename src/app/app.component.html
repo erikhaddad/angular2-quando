@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <div class="header-container">
+    <div class="header-container_content">
+      <content>
+        <h1>{{ title}}</h1>
+        <p>{{ text }}</p>
+      </content>
+    </div>
+    <div class="header-container_image">
+      <picture class="webp__picture loaded">
+        <source srcset="/assets/events-page-hero.svg" type="image/svg+xml">
+        <img class="webp__img" alt="" src="/assets/events-page-hero.svg">
+      </picture>
+    </div>
+  </div>
+</header>
+
+<router-outlet></router-outlet>

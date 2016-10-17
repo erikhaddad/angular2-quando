@@ -1,0 +1,22 @@
+<section class="events-container">
+  <div class="g-row">
+    <div class="g-col">
+      <event-form (createEvent)="eventService.createEvent($event)"></event-form>
+    </div>
+
+    <div class="g-col">
+      <!--
+      <event-list
+          [filter]="filter | async"
+          [events]="eventService.visibleEvents$"
+          (remove)="eventService.removeEvent($event)"
+          (update)="eventService.updateEvent($event.event, $event.changes)"></event-list>
+      -->
+      <event-grid
+          [filter]="filter | async"
+          [events]="eventService.visibleEvents$"
+          (remove)="eventService.removeEvent($event)"
+          (update)="eventService.updateEvent($event.event, $event.changes)"></event-grid>
+    </div>
+  </div>
+</section>
