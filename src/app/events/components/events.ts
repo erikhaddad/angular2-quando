@@ -1,7 +1,7 @@
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/pluck';
 
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Observable} from 'rxjs/Observable';
 import {EventService} from '../services/event-service';
@@ -9,7 +9,8 @@ import {EventService} from '../services/event-service';
 
 @Component({
     styleUrls: ['events.scss'],
-    templateUrl: 'events.html'
+    templateUrl: 'events.html',
+    encapsulation: ViewEncapsulation.None
 })
 
 export class EventsComponent {

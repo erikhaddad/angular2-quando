@@ -2,3 +2,29 @@
   background-color: rgba(255,255,255,1);
   margin: 0;
 }
+event-card {
+  width: 100%;
+  transition: .2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Material Breakpoints: 0, 360, 400, 480, 600, 720, 840, 960, 1280, 1440, 1600, 1920 */
+@media (min-width: 480px) {
+  event-card {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 960px) {
+  event-card {
+    width: 33%;
+    float: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  event-card {
+    width: 25%;
+    float: left;
+  }
+}

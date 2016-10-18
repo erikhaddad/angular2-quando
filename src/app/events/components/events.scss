@@ -1,9 +1,39 @@
 .events-container {
   margin: 0;
+  transition: .2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+
+  md-tab-group {
+    background-color: white;
+
+    .md-tab-header {
+      margin: 0 auto;
+      .md-tab-label {
+        width: 50%;
+        text-transform: uppercase;
+        background-color: #FFF;
+        border-bottom: 1px solid rgba(251, 88, 48, .36);
+        transition: .2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+
+        &.md-tab-active {
+          opacity: 1;
+          border-bottom: 1px solid rgba(251, 88, 48, .87);
+
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 721px) {
   .events-container {
     margin: -48px 24px 0 24px;
+
+    md-tab-group {
+      .md-tab-header {
+        .md-tab-label {
+          width: 25%;
+        }
+      }
+    }
   }
 }
