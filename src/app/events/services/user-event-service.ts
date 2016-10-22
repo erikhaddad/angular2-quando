@@ -15,12 +15,11 @@ export class EventService {
 
     private filter$: ReplaySubject<any> = new ReplaySubject(1);
     private filteredEvents$: FirebaseListObservable<IEvent[]>;
-
     private events$: FirebaseListObservable<IEvent[]>;
 
 
     constructor(af: AngularFire, auth: AuthService) {
-        const path = `/events`;
+        const path = `/users/${auth.id}/events`;
 
         this.events$ = af.database.list(path);
 

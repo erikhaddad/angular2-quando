@@ -29,6 +29,8 @@
     margin: -48px 24px 0 24px;
 
     md-tab-group {
+      max-width: 1280px;
+      margin: 0 auto;
       .md-tab-header {
         .md-tab-label {
           width: 25%;

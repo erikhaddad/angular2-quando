@@ -21,4 +21,9 @@ export class EventsComponent {
             .pluck('completed')
             .do((value: string) => eventService.filterEvents(value));
     }
+
+    bootstrapEvents(): void {
+
+        //eventService.createEvent(_title, _datetime, image);
+    }
 }

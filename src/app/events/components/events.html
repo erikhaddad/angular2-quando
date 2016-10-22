@@ -8,6 +8,8 @@
             [events]="eventService.visibleEvents$"
             (remove)="eventService.removeEvent($event)"
             (update)="eventService.updateEvent($event.event, $event.changes)"></event-grid>
+
+        <button md-raised-button (click)="bootstrapEvents($event)">LOAD DATA</button>
       </template>
     </md-tab>
     <md-tab>
