@@ -2,7 +2,6 @@
 
 export interface IEvent {
     $key?: string;
-    completed: boolean;
     createdAt: number;
     title: string;
     datetime: string;
@@ -10,7 +9,6 @@ export interface IEvent {
 }
 
 export class Event implements IEvent {
-    completed: boolean = false;
     createdAt: number = firebase.database['ServerValue']['TIMESTAMP'];
     title: string;
     datetime: string;

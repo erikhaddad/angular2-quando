@@ -1,6 +1,14 @@
 md-card {
   margin: 6px;
   background-color: rgba(250,250,250,1);
+
+  md-card-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  md-card-subtitle {
+    color: rgba(0,0,0,.54);
+  }
 }
 
 @media (min-width: 721px) {

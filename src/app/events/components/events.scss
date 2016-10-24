@@ -1,9 +1,16 @@
 .events-container {
   margin: 0;
   transition: .2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+  position: relative;
+  height: calc(100% - 306px);
 
   md-tab-group {
     background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     .md-tab-header {
       margin: 0 auto;
@@ -22,11 +29,16 @@
       }
     }
   }
+
+  .bootstrap-button-container {
+    margin: 48px 0 24px;
+  }
 }
 
 @media (min-width: 721px) {
   .events-container {
     margin: -48px 24px 0 24px;
+    height: calc(100% - 380px + 48px);
 
     md-tab-group {
       max-width: 1280px;

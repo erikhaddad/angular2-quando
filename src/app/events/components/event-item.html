@@ -1,18 +1,7 @@
 <div
-  [ngClass]="{'event-item--completed': event.completed, 'event-item--editing': editing}"
+  [ngClass]="{'event-item--editing': editing}"
   class="event-item"
   tabindex="0">
-
-  <div class="cell">
-    <button
-      *ngIf="!editing"
-      (click)="toggleStatus()"
-      aria-label="Mark event as completed"
-      class="event-item__button"
-      type="button">
-      <span class="icon material-icons" [ngClass]="{'icon--active': event.completed}">done</span>
-    </button>
-  </div>
 
   <div class="cell">
     <div

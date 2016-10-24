@@ -1,11 +1,3 @@
-<!--
-<ul class="event-filters">
-  <li><a [class.active]="!filter" [routerLink]="['/events']">View All</a></li>
-  <li><a [class.active]="filter === 'false'" [routerLink]="['/events', {completed: false}]">Active</a></li>
-  <li><a [class.active]="filter === 'true'" [routerLink]="['/events', {completed: true}]">Completed</a></li>
-</ul>
--->
-
 <div class="event-grid">
   <event-card
       *ngFor="let event of events | async"

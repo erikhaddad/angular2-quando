@@ -1,17 +1,12 @@
 [
   {
-    "name": "The Walking Dead Season 7",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2016-10-24T01:00:00Z"
-  },
-  {
     "name": "NBA Season",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/sports_bar.png",
     "datetime": "2016-10-26T00:00:00Z"
   },
   {
     "name": "Halloween",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/alert.png",
     "datetime": "2016-10-31T00:00:00"
   },
   {
@@ -21,128 +16,98 @@
   },
   {
     "name": "Doctor Strange",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/movie_theater.png",
     "datetime": "2016-11-04T00:00:00"
   },
   {
     "name": "Guy Fawkes Night",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/reminders_night.png",
     "datetime": "2016-11-05T00:00:00"
   },
   {
     "name": "Election Day in US",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/stocks_neutral_1.png",
     "datetime": "2016-11-08T00:00:00"
   },
   {
     "name": "Veterans Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_indigo.png",
     "datetime": "2016-11-11T00:00:00"
-  },
-  {
-    "name": "Remembrance Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2016-11-11T00:00:00"
-  },
-  {
-    "name": "Remembrance Sunday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2016-11-13T00:00:00"
   },
   {
     "name": "Thanksgiving in US",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/traffic_heavy_day.png",
     "datetime": "2016-11-24T00:00:00"
   },
   {
     "name": "Black Friday in US",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/package_shipped.png",
     "datetime": "2016-11-25T00:00:00"
   },
   {
-    "name": "Saint Andrew's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2016-11-30T00:00:00"
-  },
-  {
     "name": "Rogue One: A Star Wars Story",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/movie_theater.png",
     "datetime": "2016-12-16T00:00:00"
   },
   {
     "name": "Winter",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/rainy_day.png",
     "datetime": "2016-12-21T10:45:29Z"
   },
   {
     "name": "December Solstice",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_blue.png",
     "datetime": "2016-12-21T10:45:29Z"
   },
   {
     "name": "Christmas Eve",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/fireplace.png",
     "datetime": "2016-12-24T00:00:00"
   },
   {
     "name": "Christmas Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/family_meal.png",
     "datetime": "2016-12-25T00:00:00"
   },
   {
     "name": "Boxing Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/package_delivered.png",
     "datetime": "2016-12-26T00:00:00"
   },
   {
     "name": "New Year's Eve",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/snack.png",
     "datetime": "2016-12-31T00:00:00"
   },
   {
     "name": "New Year's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/birthday_2.png",
     "datetime": "2017-01-01T00:00:00"
   },
   {
     "name": "Friday the 13th",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/meeting_night.png",
     "datetime": "2017-01-13T00:00:00"
   },
   {
     "name": "Martin Luther King Jr Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/meeting_day.png",
     "datetime": "2017-01-16T00:00:00"
   },
   {
-    "name": "Inauguration Day in US",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-01-20T00:00:00Z"
-  },
-  {
     "name": "US Presidential Inauguration",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/events.png",
     "datetime": "2017-01-20T17:00:00Z"
   },
   {
-    "name": "Robert Burns Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-01-25T00:00:00"
-  },
-  {
     "name": "Australia Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/outdoors.png",
     "datetime": "2017-01-26T00:00:00"
   },
   {
     "name": "Holocaust Memorial Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_indigo.png",
     "datetime": "2017-01-27T00:00:00"
-  },
-  {
-    "name": "Self Assessment Tax Return Deadline",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-01-31T00:00:00Z"
   },
   {
     "name": "Groundhog Day",
@@ -150,249 +115,138 @@
     "datetime": "2017-02-02T00:00:00"
   },
   {
-    "name": "Six Nations Rugby 2017",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-02-04T14:25:00Z"
-  },
-  {
     "name": "Super Bowl",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/sports_bar.png",
     "datetime": "2017-02-05T00:00:00"
   },
   {
     "name": "Valentine's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/mail.png",
     "datetime": "2017-02-14T00:00:00"
   },
   {
-    "name": "Presidents' Birthday",
+    "name": "Presidents' Day in US",
     "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
     "datetime": "2017-02-20T00:00:00"
   },
   {
     "name": "Mardi Gras (Fat Tuesday)",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-02-28T00:00:00"
-  },
-  {
-    "name": "Pancake Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-02-28T00:00:00"
-  },
-  {
-    "name": "Shrove Tuesday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/nightlife.png",
     "datetime": "2017-02-28T00:00:00"
   },
   {
     "name": "Ash Wednesday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-03-01T00:00:00"
-  },
-  {
-    "name": "Lent",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_green.png",
     "datetime": "2017-03-01T00:00:00"
   },
   {
     "name": "Lent (Catholic)",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-03-01T00:00:00"
-  },
-  {
-    "name": "Saint David's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_green.png",
     "datetime": "2017-03-01T00:00:00"
   },
   {
     "name": "Daylight Saving/Clocks Change in US",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/alarm_day.png",
     "datetime": "2017-03-12T02:00:00"
   },
   {
-    "name": "Commonwealth Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-03-13T00:00:00"
-  },
-  {
     "name": "Pi Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/tea_time.png",
     "datetime": "2017-03-14T00:00:00"
   },
   {
     "name": "Saint Patrick's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_green.png",
     "datetime": "2017-03-17T00:00:00"
   },
   {
     "name": "Spring",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/outdoors.png",
     "datetime": "2017-03-20T10:30:00Z"
-  },
-  {
-    "name": "March Equinox",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-03-20T10:30:00Z"
-  },
-  {
-    "name": "World Water Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-03-22T00:00:00"
   },
   {
     "name": "Mother's Day in the UK",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/mail.png",
     "datetime": "2017-03-26T00:00:00"
   },
   {
     "name": "Clocks Change in UK",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/alarm_day.png",
     "datetime": "2017-03-26T01:00:00Z"
   },
   {
     "name": "April Fools' Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/stopwatch_stopped.png",
     "datetime": "2017-04-01T00:00:00"
   },
   {
     "name": "Palm Sunday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/stopwatch_running.png",
     "datetime": "2017-04-09T00:00:00"
   },
   {
-    "name": "Maundy Thursday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-04-13T00:00:00"
-  },
-  {
     "name": "Good Friday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_green.png",
     "datetime": "2017-04-14T00:00:00"
   },
   {
     "name": "Easter",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/traffic_heavy_day.png",
     "datetime": "2017-04-16T00:00:00"
   },
   {
-    "name": "Easter Monday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-04-17T00:00:00"
-  },
-  {
-    "name": "Queen Elizabeth's Birthday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-04-21T00:00:00"
-  },
-  {
     "name": "Earth Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/outdoors.png",
     "datetime": "2017-04-22T00:00:00"
   },
   {
-    "name": "Saint George's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-04-23T00:00:00"
-  },
-  {
-    "name": "Anzac Day",
-    "url": "/until/anzac-day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-04-25T00:00:00"
-  },
-  {
-    "name": "May Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-05-01T00:00:00"
-  },
-  {
     "name": "Cinco De Mayo",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/nightlife.png",
     "datetime": "2017-05-05T00:00:00"
   },
   {
-    "name": "Mother's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "name": "Mother's Day in US",
+    "image": "gs://quando-8082b.appspot.com/public/mail.png",
     "datetime": "2017-05-14T00:00:00"
   },
   {
-    "name": "World Whisky Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-05-20T00:00:00"
-  },
-  {
-    "name": "World Goth Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-05-22T00:00:00"
-  },
-  {
-    "name": "Towel Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-05-25T00:00:00"
-  },
-  {
     "name": "Memorial Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/gradient_indigo.png",
     "datetime": "2017-05-29T00:00:00"
-  },
-  {
-    "name": "Spring Bank Holiday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-05-29T00:00:00"
-  },
-  {
-    "name": "Flag Day in US",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-06-14T00:00:00"
   },
   {
     "name": "Father's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/mail.png",
     "datetime": "2017-06-18T00:00:00"
   },
   {
     "name": "Summer",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-06-21T04:25:14Z"
-  },
-  {
-    "name": "June Solstice",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/tourists.png",
     "datetime": "2017-06-21T04:25:14Z"
   },
   {
     "name": "Canada Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/alert.png",
     "datetime": "2017-07-01T00:00:00"
   },
   {
     "name": "Wimbledon",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/sports_bar.png",
     "datetime": "2017-07-03T00:00:00Z"
   },
   {
     "name": "Independence Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/lunch_break.png",
     "datetime": "2017-07-04T00:00:00"
   },
   {
-    "name": "Saint Swithun's Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-07-15T00:00:00"
-  },
-  {
-    "name": "Summer Bank Holiday",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
-    "datetime": "2017-08-28T00:00:00"
-  },
-  {
     "name": "Father's Day (Aus/NZ)",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/mail.png",
     "datetime": "2017-09-03T00:00:00"
   },
   {
     "name": "Labor Day",
-    "image": "gs://quando-8082b.appspot.com/public/activity_high.png",
+    "image": "gs://quando-8082b.appspot.com/public/meeting_day.png",
     "datetime": "2017-09-04T00:00:00"
   }
 ]

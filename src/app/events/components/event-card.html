@@ -1,7 +1,7 @@
 <md-card>
   <md-card-title-group>
-    <img md-card-sm-image src="/assets/activity_high.png">
+    <img md-card-sm-image [src]="trustedImageUrl">
     <md-card-title>{{ event.title }}</md-card-title>
-    <md-card-subtitle>{{ event.createdAt }}</md-card-subtitle>
+    <md-card-subtitle>{{ event.datetime | amDateFormat:'LL' }} ({{ event.datetime | amDifference: today :'days' : false }} days away)</md-card-subtitle>
   </md-card-title-group>
 </md-card>

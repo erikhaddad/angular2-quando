@@ -4,18 +4,26 @@
       <template md-tab-label>All</template>
       <template md-tab-content>
         <event-grid
-            [filter]="filter | async"
-            [events]="eventService.visibleEvents$"
-            (remove)="eventService.removeEvent($event)"
-            (update)="eventService.updateEvent($event.event, $event.changes)"></event-grid>
+            [events]="allEvents"></event-grid>
 
-        <button md-raised-button (click)="bootstrapEvents($event)">LOAD DATA</button>
+        <!--
+        <div style="clear: both"></div>
+        <div class="bootstrap-button-container" layout="row" layout-align="center center">
+          <button md-raised-button (click)="bootstrapEvents()">LOAD DATA</button>
+        </div>
+        -->
       </template>
     </md-tab>
     <md-tab>
       <template md-tab-label>Personal</template>
       <template md-tab-content>
         <event-form (createEvent)="eventService.createEvent($event)"></event-form>
+
+        <event-grid
+            [filter]="filter | async"
+            [events]="eventService.userEvents"
+            (remove)="eventService.removeEvent($event)"
+            (update)="eventService.updateEvent($event.event, $event.changes)"></event-grid>
       </template>
     </md-tab>
   </md-tab-group>

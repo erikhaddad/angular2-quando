@@ -3,64 +3,55 @@ import 'rxjs/add/operator/switchMap';
 
 import {Injectable} from '@angular/core';
 import {AngularFire, FirebaseListObservable} from 'angularfire2';
-import {Observable} from 'rxjs/Observable';
-import {ReplaySubject} from 'rxjs/ReplaySubject';
 import {AuthService} from '../../auth/services/auth-service';
 import {IEvent, Event} from '../models/event';
 
 
 @Injectable()
 export class EventService {
-    visibleEvents$: Observable<IEvent[]>;
-
-    private filter$: ReplaySubject<any> = new ReplaySubject(1);
-    private filteredEvents$: FirebaseListObservable<IEvent[]>;
-
-    private events$: FirebaseListObservable<IEvent[]>;
-
+    private _allEvents$: FirebaseListObservable<IEvent[]>;
+    private _userEvents$: FirebaseListObservable<IEvent[]>;
 
     constructor(af: AngularFire, auth: AuthService) {
-        const path = `/events`;
+        const allEventsPath = `/events`;
+        this._allEvents$ = af.database.list(allEventsPath);
 
-        this.events$ = af.database.list(path);
-
-        this.filteredEvents$ = af.database.list(path, {
-            query: {
-                orderByChild: 'completed',
-                equalTo: this.filter$
-            }
-        });
-
-        this.visibleEvents$ = this.filter$
-            .switchMap(filter => filter === null ? this.events$ : this.filteredEvents$);
+        const userEventsPath = `/users/${auth.id}/events`;
+        this._userEvents$ = af.database.list(userEventsPath);
     }
 
 
-    filterEvents(filter: string): void {
-        switch (filter) {
-            case 'false':
-                this.filter$.next(false);
-                break;
-
-            case 'true':
-                this.filter$.next(true);
-                break;
-
-            default:
-                this.filter$.next(null);
-                break;
-        }
+    get allEvents(): FirebaseListObservable<IEvent[]> {
+        return this._allEvents$;
     }
 
-    createEvent(title: string, datetime: string, image: string): firebase.Promise<any> {
-        return this.events$.push(new Event(title, datetime, image));
+    get userEvents(): FirebaseListObservable<IEvent[]> {
+        return this._userEvents$;
     }
 
-    removeEvent(event: IEvent): firebase.Promise<any> {
-        return this.events$.remove(event.$key);
+    /** PUBLIC EVENTS **/
+    createPublicEvent(title: string, datetime: string, image: string): firebase.Promise<any> {
+        return this._allEvents$.push(new Event(title, datetime, image));
     }
 
-    updateEvent(event: IEvent, changes: any): firebase.Promise<any> {
-        return this.events$.update(event.$key, changes);
+    removePublicEvent(event: IEvent): firebase.Promise<any> {
+        return this._allEvents$.remove(event.$key);
+    }
+
+    updatePublicEvent(event: IEvent, changes: any): firebase.Promise<any> {
+        return this._allEvents$.update(event.$key, changes);
+    }
+
+    /** USER-CENTRIC EVENTS **/
+    createUserEvent(title: string, datetime: string, image: string): firebase.Promise<any> {
+        return this._userEvents$.push(new Event(title, datetime, image));
+    }
+
+    removeUserEvent(event: IEvent): firebase.Promise<any> {
+        return this._userEvents$.remove(event.$key);
+    }
+
+    updateUserEvent(event: IEvent, changes: any): firebase.Promise<any> {
+        return this._userEvents$.update(event.$key, changes);
     }
 }

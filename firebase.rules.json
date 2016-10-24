@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "events": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'inpZRUkiEIXaCFnsDOVGLpUUtHl2'"
+    },
+    "$uid": {
+      ".read": "auth !== null && auth.uid === $uid",
+      ".write": "auth !== null && auth.uid === $uid",
+      ".indexOn": ["datetime"]
+    }
+  }
+}

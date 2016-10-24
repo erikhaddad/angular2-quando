@@ -6,7 +6,6 @@ import {AuthGuard} from '../auth';
 
 import {EventFormComponent} from './components/event-form';
 import {EventItemComponent} from './components/event-item';
-import {EventListComponent} from './components/event-list';
 import {EventCardComponent} from './components/event-card';
 import {EventGridComponent} from './components/event-grid';
 import {EventsComponent} from './components/events';
@@ -16,6 +15,7 @@ import {EventService} from './services/event-service';
 import { NgModule, Directive, HostBinding, Input } from '@angular/core';
 import { MaterialModule } from '@angular/material';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import {MomentModule} from "angular2-moment";
 
 
 /** ROUTES **/
@@ -71,7 +71,6 @@ export class FlexDirective{
         AutoFocusDirective,
         EventFormComponent,
         EventItemComponent,
-        EventListComponent,
         EventCardComponent,
         EventGridComponent,
         EventsComponent
@@ -79,6 +78,7 @@ export class FlexDirective{
     imports: [
         CommonModule,
         FormsModule,
+        MomentModule,
         MaterialModule.forRoot(),
         RouterModule.forChild(routes)
     ],

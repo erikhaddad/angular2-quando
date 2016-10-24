@@ -35,10 +35,4 @@ export class EventItemComponent {
     stopEditing(): void {
         this.editing = false;
     }
-
-    toggleStatus(): void {
-        this.update.emit({
-            completed: !this.event.completed
-        });
-    }
 }

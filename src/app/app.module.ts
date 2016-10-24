@@ -7,6 +7,7 @@ import { EventsModule } from './events';
 
 import { AppComponent } from './app.component';
 import { QuandoRoutingModule } from "./app-routing.module";
+import { MaterialModule } from "@angular/material";
 
 @NgModule({
     bootstrap: [
@@ -20,9 +21,11 @@ import { QuandoRoutingModule } from "./app-routing.module";
         AuthModule,
         FirebaseModule,
         EventsModule,
+        MaterialModule.forRoot(),
         QuandoRoutingModule
     ],
     providers: [
+
     ]
 })
 
