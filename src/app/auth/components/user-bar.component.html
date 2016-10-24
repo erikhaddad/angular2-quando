@@ -1,0 +1,16 @@
+<div class="user-bar">
+  <!-- USER IS SIGNED OUT -->
+  <div class="user-inactive" *ngIf="!isSignedIn()" layout="row">
+    <span flex></span>
+    <span>To create your own personalized events, click here --> </span>
+    <button md-button color="primary" (click)="signInWithGoogle()">Sign In</button>
+  </div>
+
+  <!-- USER IS SIGNED IN -->
+  <div class="user-active" *ngIf="isSignedIn()" layout="row">
+    <span flex></span>
+    <span class="user-greeting">Welcome back, {{ auth.authState.google.displayName }}</span>
+    <img [src]="auth.authState.google.photoURL" style="border-radius: 50%; height: 36px; width: 36px; margin: 0 12px" />
+    <button md-button color="primary" (click)="signOut()">Sign Out</button>
+  </div>
+</div>

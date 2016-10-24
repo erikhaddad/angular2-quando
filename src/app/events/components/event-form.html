@@ -1,12 +1,27 @@
 <form class="event-form" (ngSubmit)="submit()" novalidate>
   <input
       [(ngModel)]="title"
+      name="title"
       (keyup.escape)="clear()"
       autocomplete="off"
       autofocus
       class="event-form__input"
-      name="title"
-      placeholder="What needs to be done?"
+      placeholder="What's the name?"
       required
       type="text">
+  <input
+      [(ngModel)]="datetime"
+      (keyup.escape)="clear()"
+      autocomplete="off"
+      class="event-form__input"
+      placeholder="When is it?"
+      required
+      type="text">
+  <input
+      [(ngModel)]="image"
+      name="image"
+      class="event-form__input"
+      required
+      placeholder="Image"
+      type="file">
 </form>

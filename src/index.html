@@ -9,100 +9,99 @@
   <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
-<app-root>
-  <style type="text/css">
-    .loader {
-      color: #fb5830;
-      position: fixed;
-      box-sizing: border-box;
-      left: -9999px;
-      top: -9999px;
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      z-index: 999999
-    }
-
-    .loader:after, .loader:before {
-      box-sizing: border-box
-    }
-
-    .loader.is-active {
-      background-color: rgba(255, 243, 224, 0.85);
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0
-    }
-
-    @keyframes rotation {
-      from {
-        transform: rotate(0)
+  <app-root>
+    <style type="text/css">
+      .loader {
+        color: #fb5830;
+        position: fixed;
+        box-sizing: border-box;
+        left: -9999px;
+        top: -9999px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        z-index: 999999;
       }
-      to {
-        transform: rotate(359deg)
+
+      .loader:after, .loader:before {
+        box-sizing: border-box;
       }
-    }
 
-    @keyframes blink {
-      from {
-        opacity: .5
+      .loader.is-active {
+        background-color: rgba(255, 243, 224, 0.85);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
       }
-      to {
-        opacity: 1
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
       }
-    }
 
-    .loader[data-text]:before {
-      position: fixed;
-      left: 0;
-      top: 50%;
-      color: currentColor;
-      font-family: Helvetica, Arial, sans-serif;
-      text-align: center;
-      width: 100%;
-      font-size: 14px
-    }
+      @keyframes blink {
+        from {
+          opacity: .5;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
-    .loader[data-text='']:before {
-      content: 'Loading...'
-    }
+      .loader[data-text]:before {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        color: currentColor;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+      }
 
-    .loader:not([data-text='']):before {
-      content: attr(data-text)
-    }
+      .loader[data-text='']:before {
+        content: 'Loading...';
+      }
 
-    .loader[blink]:before {
-      animation: blink 1s linear infinite alternate
-    }
+      .loader:not([data-text='']):before {
+        content: attr(data-text);
+      }
 
-    .loader-default[data-text]:before {
-      top: calc(50% - 63px)
-    }
+      .loader[blink]:before {
+        animation: blink 1s linear infinite alternate;
+      }
 
-    .loader-default:after {
-      content: '';
-      position: fixed;
-      width: 48px;
-      height: 48px;
-      border: solid 8px #fb5830;
-      border-left-color: transparent;
-      border-radius: 50%;
-      top: calc(50% - 24px);
-      left: calc(50% - 24px);
-      animation: rotation 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite
-    }
+      .loader-default[data-text]:before {
+        top: calc(50% - 63px);
+      }
 
-    .loader-default[half]:after {
-      border-right-color: transparent
-    }
+      .loader-default:after {
+        content: '';
+        position: fixed;
+        width: 48px;
+        height: 48px;
+        border: solid 8px #fb5830;
+        border-left-color: transparent;
+        border-radius: 50%;
+        top: calc(50% - 24px);
+        left: calc(50% - 24px);
+        animation: rotation 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+      }
 
-    .loader-default[inverse]:after {
-      animation-direction: reverse
-    }
+      .loader-default[half]:after {
+        border-right-color: transparent;
+      }
 
-  </style>
-  <div id="loader" class="loader loader-default is-active" data-text=""></div>
-</app-root>
+      .loader-default[inverse]:after {
+        animation-direction: reverse;
+      }
+    </style>
+    <div id="loader" class="loader loader-default is-active" data-text=""></div>
+  </app-root>
 </body>
 </html>

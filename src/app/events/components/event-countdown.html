@@ -1,0 +1,28 @@
+<main class="event-countdown" layout="column" layout-align="center" (click)="makeWaves($event)">
+  <section class="ink-section">
+    <div id="ink"></div>
+    <div class="content">
+      <div layout="row" layout-align="center">
+        <h1>{{ event.title }}</h1>
+      </div>
+      <div layout="row" layout-align="center">
+        <div flex="20" class="content">
+          <time ng-bind="dhms.day.value"></time>
+          <label ng-bind="dhms.day.label"></label>
+        </div>
+        <div flex="20" class="content">
+          <time ng-bind="dhms.hr.value"></time>
+          <label ng-bind="dhms.hr.label"></label>
+        </div>
+        <div flex="20" class="content">
+          <time ng-bind="dhms.min.value"></time>
+          <label ng-bind="dhms.min.label"></label>
+        </div>
+        <div flex="20" class="content">
+          <time ng-bind="dhms.sec.value"></time>
+          <label ng-bind="dhms.sec.label"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

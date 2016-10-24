@@ -15,7 +15,9 @@ import {EventService} from './services/event-service';
 import { NgModule, Directive, HostBinding, Input } from '@angular/core';
 import { MaterialModule } from '@angular/material';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
-import {MomentModule} from "angular2-moment";
+import { MomentModule } from "angular2-moment";
+import { UserBarComponent } from "../auth/components/user-bar.component";
+import {EventCountdownComponent} from "./components/event-countdown";
 
 
 /** ROUTES **/
@@ -62,11 +64,13 @@ export class FlexDirective{
 }
 
 /** MAIN MODULE **/
-
 @NgModule({
     declarations: [
         FlexDirective,
         LayoutDirective,
+
+        UserBarComponent,
+        EventCountdownComponent,
 
         AutoFocusDirective,
         EventFormComponent,

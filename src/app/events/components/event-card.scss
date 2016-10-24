@@ -5,9 +5,23 @@ md-card {
   md-card-title {
     font-size: 18px;
     font-weight: 400;
+
+    /*
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    */
   }
   md-card-subtitle {
     color: rgba(0,0,0,.54);
+
+    &.countdown-days {
+      font-style: italic;
+    }
+  }
+  [md-card-sm-image] {
+    width: auto;
+    height: 64px;
   }
 }
 

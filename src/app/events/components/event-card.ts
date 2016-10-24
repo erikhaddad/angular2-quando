@@ -33,34 +33,35 @@ export class EventCardComponent implements OnInit {
         var storageRef = storage.ref();
         var imgRef = storageRef.child(this.event.image);
 
-        imgRef.getDownloadURL().then(function (downloadUrl) {
-            that.trustedImageUrl = that.sanitizer.bypassSecurityTrustUrl(downloadUrl);
+        imgRef.getDownloadURL().then(
+            function (downloadUrl) {
+                that.trustedImageUrl = that.sanitizer.bypassSecurityTrustUrl(downloadUrl);
 
-            // HACK due to img tag src not picking up changes naturally
-            that.changeDetector.detectChanges();
+                // HACK due to img tag src not picking up changes naturally
+                that.changeDetector.detectChanges();
 
-        }).catch(function(error) {
-            console.error(error);
-            /*
-             switch (error.code) {
-             case 'storage/object_not_found':
-             // File doesn't exist
-             break;
+            }).catch(function(error) {
+                //console.error(error);
+                /*
+                 switch (error.code) {
+                 case 'storage/object_not_found':
+                 // File doesn't exist
+                 break;
 
-             case 'storage/unauthorized':
-             // User doesn't have permission to access the object
-             break;
+                 case 'storage/unauthorized':
+                 // User doesn't have permission to access the object
+                 break;
 
-             case 'storage/canceled':
-             // User canceled the upload
-             break;
+                 case 'storage/canceled':
+                 // User canceled the upload
+                 break;
 
-             case 'storage/unknown':
-             // Unknown error occurred, inspect the server response
-             break;
-             }
-             */
-        });
+                 case 'storage/unknown':
+                 // Unknown error occurred, inspect the server response
+                 break;
+                 }
+                 */
+            });
     }
 
     editTitle(): void {

@@ -3,8 +3,7 @@
     <md-tab>
       <template md-tab-label>All</template>
       <template md-tab-content>
-        <event-grid
-            [events]="allEvents"></event-grid>
+        <event-grid [events]="allEvents"></event-grid>
 
         <!--
         <div style="clear: both"></div>
@@ -17,13 +16,11 @@
     <md-tab>
       <template md-tab-label>Personal</template>
       <template md-tab-content>
+        <user-bar></user-bar>
+
         <event-form (createEvent)="eventService.createEvent($event)"></event-form>
 
-        <event-grid
-            [filter]="filter | async"
-            [events]="eventService.userEvents"
-            (remove)="eventService.removeEvent($event)"
-            (update)="eventService.updateEvent($event.event, $event.changes)"></event-grid>
+        <event-grid [events]="eventService.userEvents"></event-grid>
       </template>
     </md-tab>
   </md-tab-group>
