@@ -11,8 +11,10 @@ import {AuthService} from '../services/auth-service';
 
 export class UserBarComponent {
 
+    window: Window;
+
     constructor(private auth: AuthService, private router: Router) {
-        console.log(auth);
+
     }
 
     isSignedIn(): boolean {
@@ -26,9 +28,16 @@ export class UserBarComponent {
 
     signOut(): void {
         this.auth.signOut();
+        this.postSignOut();
     }
 
     private postSignIn(): void {
         this.router.navigate(['/events']);
+    }
+    private postSignOut(): void {
+        window.location.href = '/';
+
+        // This wasn't working
+        //this.router.navigate(['/']);
     }
 }

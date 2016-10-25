@@ -2,7 +2,7 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {Routes, RouterModule} from '@angular/router';
 
-import {AuthGuard} from '../auth';
+import {AuthGuard, UnauthGuard} from '../auth';
 
 import {EventFormComponent} from './components/event-form';
 import {EventItemComponent} from './components/event-item';
@@ -22,6 +22,12 @@ import {EventCountdownComponent} from "./components/event-countdown";
 
 /** ROUTES **/
 const routes: Routes = [
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '/events',
+        canActivate: [UnauthGuard]
+    },
     {
         path: 'events',
         component: EventsComponent,

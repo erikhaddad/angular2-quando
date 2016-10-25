@@ -1,6 +1,15 @@
-<div class="g-row sign-in">
-  <div class="g-col">
-    <h1 class="sign-in__heading">Sign in</h1>
-    <button class="sign-in__button" (click)="signInWithGoogle()" type="button">Google</button>
+<div class="sign-in-container">
+
+  <div class="sign-in-inner" layout="row" layout-align="center center">
+    <div class="sign-in-content" layout="column" layout-align="center center">
+      <h1>Welcome to Quando!</h1>
+      <h2>This is a demo website demonstrating AngularFire2</h2>
+
+      <button md-raised-button color="primary" (click)="signInWithGoogle()">Sign In with Google</button>
+
+      <p>This site is best experienced when you sign in securely with your Google account</p>
+
+    </div>
   </div>
+
 </div>

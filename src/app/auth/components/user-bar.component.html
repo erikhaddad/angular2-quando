@@ -2,7 +2,7 @@
   <!-- USER IS SIGNED OUT -->
   <div class="user-inactive" *ngIf="!isSignedIn()" layout="row">
     <span flex></span>
-    <span>To create your own personalized events, click here --> </span>
+    <span class="user-greeting">To create your own personalized events, click here --> </span>
     <button md-button color="primary" (click)="signInWithGoogle()">Sign In</button>
   </div>
 
