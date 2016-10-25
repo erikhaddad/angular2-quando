@@ -18,7 +18,7 @@ export class EventsComponent {
     allEvents: Observable<any>;
     userEvents: Observable<any>;
 
-    constructor(public route: ActivatedRoute, public eventService: EventService) {
+    constructor(public eventService: EventService) {
         this.allEvents = eventService.allEvents;
         this.userEvents = eventService.userEvents;
     }

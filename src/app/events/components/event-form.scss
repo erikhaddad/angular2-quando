@@ -1,13 +1,20 @@
-form {
-  background-color: rgba(255,255,255,1);
-}
-
 .event-form-card {
   border: 1px solid rgba(0,0,0,.14);
   padding: 0;
   margin: 24px;
+  display: inline-block;
+  min-width: 400px;
 
-  .event-form-element, .event-form-actions {
-    padding: 24px;
+  .event-form-content {
+    padding: 0 24px 24px;
+    margin: 0;
+  }
+  .event-form-actions {
+    margin: 0 16px 16px 0;
+    padding: 0;
+  }
+
+  .image-select-text {
+    padding-top: 12px;
   }
 }

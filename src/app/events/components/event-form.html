@@ -1,53 +1,26 @@
-<!--
-<form class="event-form" (ngSubmit)="submit()" novalidate flex="100" layout="column" layout-align="center center">
-  <input
-      [(ngModel)]="title"
-      name="title"
-      (keyup.escape)="clear()"
-      autocomplete="off"
-      autofocus
-      class="event-form__input"
-      placeholder="What's the name?"
-      required
-      type="text" />
-  <input
-      [(ngModel)]="datetime"
-      name="datetime"
-      (keyup.escape)="clear()"
-      autocomplete="off"
-      class="event-form__input"
-      placeholder="When is it?"
-      required
-      type="text" />
-  <input
-      [(ngModel)]="image"
-      name="image"
-      class="event-form__input"
-      required
-      placeholder="Image"
-      type="file" />
-</form>
--->
-<md-card class="event-form-card">
-  <md-toolbar color="primary">New Event</md-toolbar>
-  <md-card-content class="event-form-content">
-    <form class="event-form-element" (ngSubmit)="submit()" novalidate>
-      <p>
-        <md-input class="demo-full-width" placeholder="What's the name?" required></md-input>
-        <md-input class="demo-full-width" placeholder="When is it?" required>
-          <md-hint align="end">MM-DD-YYYY</md-hint>
-        </md-input>
-        <input
-            [(ngModel)]="image"
-            name="image"
-            class="event-form__input"
-            required
-            placeholder="Choose image"
-            type="file" />
-      </p>
-    </form>
-  </md-card-content>
-  <md-card-actions class="event-form-actions" layout="row" layout-align="end">
-    <button md-raised-button color="primary" (click)="submit()">Create</button>
-  </md-card-actions>
-</md-card>
+<div layout="row" layout-align="center center">
+  <md-card class="event-form-card">
+    <md-toolbar color="primary">New Event</md-toolbar>
+    <md-card-content class="event-form-content">
+      <form class="event-form-element" (ngSubmit)="submit()" novalidate>
+        <p>
+          <md-input placeholder="What's the name?"
+                    required
+                    [(ngModel)]="title"
+                    name="title"></md-input>
+          <md-input placeholder="When is it?"
+                    required
+                    [(ngModel)]="datetime"
+                    name="datetime">
+            <md-hint align="end">{{ hintText }}</md-hint>
+          </md-input>
+        </p>
+        <p class="image-select-text">Select an image for your event</p>
+        <input type="file" (change)="onFileChange($event)" />
+      </form>
+    </md-card-content>
+    <md-card-actions class="event-form-actions" layout="row" layout-align="end">
+      <button md-raised-button color="primary" (click)="submit()">Create</button>
+    </md-card-actions>
+  </md-card>
+</div>
