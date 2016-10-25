@@ -10,7 +10,7 @@
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
     "target": "es6",
-    "types": ["node", "jasmine", "firebase", "hammerjs"],
+    "types": ["node", "jasmine", "firebase", "hammerjs", "moment"],
     "typeRoots": [
       "../node_modules/@types"
     ]

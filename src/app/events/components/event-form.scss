@@ -1,3 +1,13 @@
 form {
   background-color: rgba(255,255,255,1);
 }
+
+.event-form-card {
+  border: 1px solid rgba(0,0,0,.14);
+  padding: 0;
+  margin: 24px;
+
+  .event-form-element, .event-form-actions {
+    padding: 24px;
+  }
+}

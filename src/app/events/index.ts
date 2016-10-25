@@ -26,6 +26,11 @@ const routes: Routes = [
         path: 'events',
         component: EventsComponent,
         canActivate: [AuthGuard]
+    },
+    {
+        path: 'events/:id',
+        component: EventCountdownComponent,
+        canActivate: [AuthGuard]
     }
 ];
 
@@ -91,6 +96,10 @@ export class FlexDirective{
         {
             provide: HAMMER_GESTURE_CONFIG,
             useClass: MyHammerConfig
+        },
+        {
+            provide: Window,
+            useValue: window
         }
     ]
 })
