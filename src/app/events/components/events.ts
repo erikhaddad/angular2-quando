@@ -2,11 +2,8 @@ import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/pluck';
 
 import {Component, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 import {Observable} from 'rxjs/Observable';
 import {EventService} from '../services/event-service';
-import {Event} from '../models/event';
-
 
 @Component({
     styleUrls: ['events.scss'],
@@ -25,11 +22,6 @@ export class EventsComponent {
 
     bootstrapEvents() {
         let events = [
-            {
-                "title": "NBA Season",
-                "image": "public/sports_bar.png",
-                "datetime": "2016-10-26T00:00:00Z"
-            },
             {
                 "title": "Halloween",
                 "image": "public/alert.png",
@@ -281,9 +273,6 @@ export class EventsComponent {
             var thisEvent = events[e];
 
             this.eventService.createPublicEvent(thisEvent.title, thisEvent.datetime, thisEvent.image);
-
-            //var newEvent = new Event(thisEvent.title, thisEvent.datetime, thisEvent.image);
-            //this.eventService.createPublicEvent(newEvent);
         }
     }
 }

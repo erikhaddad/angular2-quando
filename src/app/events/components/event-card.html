@@ -3,6 +3,8 @@
     <img md-card-sm-image [src]="trustedImageUrl" />
     <md-card-title>{{ event.title }}</md-card-title>
     <md-card-subtitle>{{ event.datetime | amDateFormat:'LL' }}</md-card-subtitle>
-    <md-card-subtitle class="countdown-days">{{ event.datetime | amDifference: today :'days' : false }} days away</md-card-subtitle>
+    <md-card-subtitle class="countdown-days">
+      {{ event.datetime | amDifference: today :'days' : false }} days away
+    </md-card-subtitle>
   </md-card-title-group>
 </md-card>

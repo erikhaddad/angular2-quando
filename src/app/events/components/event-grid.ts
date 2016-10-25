@@ -2,7 +2,6 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 import { FirebaseListObservable } from 'angularfire2';
 import { IEvent } from '../models/event';
 
-
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'event-grid',
@@ -11,7 +10,6 @@ import { IEvent } from '../models/event';
 })
 
 export class EventGridComponent {
-  @Input() filter: string;
   @Input() events: FirebaseListObservable<IEvent[]>;
 
   @Output() remove = new EventEmitter(false);

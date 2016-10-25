@@ -13,5 +13,4 @@ const firebaseAuthConfig = {
   remember: 'default'
 };
 
-
 export const FirebaseModule = AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig);

@@ -5,7 +5,6 @@ import {Routes, RouterModule} from '@angular/router';
 import {AuthGuard, UnauthGuard} from '../auth';
 
 import {EventFormComponent} from './components/event-form';
-import {EventItemComponent} from './components/event-item';
 import {EventCardComponent} from './components/event-card';
 import {EventGridComponent} from './components/event-grid';
 import {EventsComponent} from './components/events';
@@ -85,7 +84,6 @@ export class FlexDirective{
 
         AutoFocusDirective,
         EventFormComponent,
-        EventItemComponent,
         EventCardComponent,
         EventGridComponent,
         EventsComponent
