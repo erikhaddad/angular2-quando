@@ -1,16 +1,11 @@
 md-card {
   margin: 6px;
   background-color: rgba(250,250,250,1);
+  min-height: 124px;
 
   md-card-title {
     font-size: 18px;
     font-weight: 400;
-
-    /*
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    */
   }
   md-card-subtitle {
     color: rgba(0,0,0,.54);
